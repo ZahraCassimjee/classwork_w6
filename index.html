@@ -19,7 +19,7 @@
   </head>
   <body>
 
-    <form id="pizzaForm">
+    <form id="pizzaForm" onchange="realTimeCost()">
       <h3>Custom Pizza Maker</h3>
       <div class="left">
         <input type="text" class="form-control" placeholder="Name Your Pizza" id="pizzaName">
@@ -129,7 +129,7 @@
           </div>
 
           </div>
-          <button class="btn btn-primary" type="button" onclick="makePizza()" >Make My Pizza</button>    
+          <button class="btn btn-primary" type="button" onclick="makePizza(); displayOrder()" >Make My Pizza</button>    
 
         </form>
 
@@ -142,15 +142,10 @@
       <div id="orders">
 
       </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text"><strong>Name:</strong> Value</p>
-          <p class="card-text"><strong>Size:</strong> Value</p>
-          <p class="card-text"><strong>Toppings:</strong> Value</p>
-          <p class="card-text"><strong>Cost:</strong> Value</p>
-        </div>
-      </div>
+      
+
+      
+
     </div>
     
   </body>

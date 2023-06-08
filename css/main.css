@@ -103,3 +103,12 @@ select{
     font-size: 40px;
     margin-top: -10px;
 }
+
+.card{
+    box-shadow: 25px 24px 20px 4px rgba(0,0,0,0.1);
+
+}
+
+.card-textt{
+    padding-top: 20px;
+}

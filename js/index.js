@@ -110,16 +110,19 @@ for( let i = 0; i < pizzaOrder.length; i++){
 overallTotal += cost;
 
 area.innerHTML += `
-
 <div class="card">
-        <div class="card-body">
+          <div class="card-header">
             <h5 class="card-title">${name}</h5>
-            <p class="card-text"><strong>base:</strong>  ${base}</p>
-            <p class="card-text"><strong>Size:</strong>  ${size}</p>
-            <p class="card-text"><strong>Toppings:</strong> ${toppings.join(", ")}</p>
-            <p class="card-text"><strong>Cost:</strong>  ${cost}.00</p>
-        </div>
-</div> `
+          </div>
+          <div class="card-body">
+              <p class="card-text"><strong>base:</strong>  ${base}</p>
+              <p class="card-text"><strong>Size:</strong>  ${size}</p>
+              <p class="card-text"><strong>Toppings:</strong> ${toppings.join(", ")}</p>
+              <p class="card-textt"><strong>Cost:</strong>  ${cost}.00</p>
+          </div>
+  </div>
+
+ `
 
 total.innerHTML = "R" + overallTotal + ".00";
 
